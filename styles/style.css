@@ -79,15 +79,46 @@ nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  min-height: 100vh;
+  padding: 1.5rem 5rem;
+}
+
+.intro-page .intro {
+  padding: 0 5rem;
+}
+
+.intro-page .intro h1 {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 6.5rem;
+  color: #310D09;
+  font-weight: normal;
+  line-height: 2;
+}
+
+.intro-page .intro .bite {
+  background-image: url("../imgs/button_bited.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2rem 8rem 2rem 0;
+  text-align: center;
+}
+
+.intro-page .intro .bite a {
+  text-decoration: none;
+}
+
+.intro-page .intro .bite h5 {
+  font-size: 2rem;
+  color: #E5CDB0;
 }
 
 .cards {
   width: 90%;
+  min-height: 100vh;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 70vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -116,27 +147,32 @@ nav ul li {
           flex: 1 1 25rem;
   min-height: 40vh;
   margin: 2rem 5rem;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background: #310D09;
+  border-radius: 25px;
 }
 
 .card h2 {
   padding: 1rem;
   line-height: 1.8;
+  font-family: Caveat Brush;
+  font-weight: normal;
+  font-size: 3.5rem;
+  color: #E5CDB0;
 }
 
 .card p {
   padding: 1rem;
   line-height: 1.8;
+  font-family: 'Montserrat', sans-serif;
+  color: whitesmoke;
 }
 
 .where {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -144,6 +180,55 @@ nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  min-height: 100vh;
+}
+
+.where .map {
+  margin: auto auto auto 8rem;
+  border: 15px solid #310D09;
+}
+
+.cards-where {
+  width: 70%;
+  margin: auto 6rem auto auto;
+}
+
+.card-where {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+  min-height: 20vh;
+  margin: 2rem 5rem;
+  background: #875034;
+  border-radius: 25px;
+  padding: 1.3rem;
+}
+
+.card-where h3 {
+  padding: 2rem;
+  line-height: 1.8;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #310D09;
+}
+
+.card-where h3 a {
+  text-decoration: none;
+  color: #310D09;
 }
 
 .how {
@@ -160,5 +245,6 @@ nav ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

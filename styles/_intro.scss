@@ -1,3 +1,34 @@
 .intro-page {
     @include flex(space-between, center, row);
+    min-height: 100vh;
+    padding: 1.5rem 5rem;
+
+    .intro {
+        padding: 0 5rem;
+
+        h1 {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 6.5rem;
+            color: #310D09;
+            font-weight: normal;
+            line-height: 2;
+        }
+
+        .bite {
+            background-image: url("../imgs/button_bited.png");       
+            background-size: contain;  
+            background-repeat: no-repeat;
+            padding: 2rem 8rem 2rem 0;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            h5 {
+                font-size: 2rem;                
+                color: #E5CDB0;
+            }
+        }
+    }    
 }
