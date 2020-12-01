@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -261,5 +262,24 @@ nav ul li {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 100vh;
+  width: 90%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hommer {
+  padding-right: 1rem;
+}
+
+.hommer h2 {
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */

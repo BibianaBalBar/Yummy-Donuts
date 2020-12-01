@@ -6,12 +6,13 @@
 }
 
 * {
-    margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #E5BC8A;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #E5BC8A;  
 }

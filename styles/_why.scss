@@ -1,9 +1,9 @@
 .cards {
-    width: 90%;
+  width: 90%;
 	min-height: 100vh;	
 	align-content: center;
 	margin: auto;
-    @include flex(space-between, center, row);
+  @include flex(space-between, center, row);
 	flex-wrap: wrap;
 }
 
