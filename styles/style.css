@@ -84,7 +84,7 @@ nav ul li {
 
 @media screen and (max-width: 400px) {
   nav {
-    padding: 0 2rem 0 0;
+    padding: 0.5rem 2rem 0 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

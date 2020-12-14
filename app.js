@@ -35,11 +35,11 @@ function animateScenes() {
     reverse: false
   })  
   .setTween(jumpCards)    
-  .addIndicators({
-  colorStart: "white",
-  colorTrigger: "white",
-  name: "page"
-  })
+  // .addIndicators({
+  // colorStart: "white",
+  // colorTrigger: "white",
+  // name: "page"
+  // })
   .addTo(controller);
       
   //animation
@@ -57,11 +57,11 @@ function animateScenes() {
     reverse: false
   })  
   .setTween(homerImg)    
-  .addIndicators({
-  colorStart: "white",
-  colorTrigger: "white",
-  name: "page"
-  })
+  // .addIndicators({
+  // colorStart: "white",
+  // colorTrigger: "white",
+  // name: "page"
+  // })
   .addTo(controller);  
 
 }
