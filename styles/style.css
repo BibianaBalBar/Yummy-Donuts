@@ -67,6 +67,12 @@ nav ul li {
   padding: 0 2.5rem;
 }
 
+@media screen and (max-width: 800px) {
+  nav {
+    font-size: 1.5rem;
+  }
+}
+
 .intro-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,11 +91,11 @@ nav ul li {
   padding: 1.5rem 5rem;
 }
 
-.intro-page .intro {
+.intro {
   padding: 0 5rem;
 }
 
-.intro-page .intro h1 {
+.intro h1 {
   font-family: 'Caveat Brush', cursive;
   font-size: 6.5rem;
   color: #310D09;
@@ -97,7 +103,7 @@ nav ul li {
   margin: 10rem auto 0 auto;
 }
 
-.intro-page .intro h4 {
+.intro h4 {
   font-family: Caveat Brush;
   font-weight: normal;
   color: #875034;
@@ -105,7 +111,7 @@ nav ul li {
   margin: 0 auto 8rem auto;
 }
 
-.intro-page .intro .bite {
+.bite {
   background-image: url("../imgs/button_bited.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -113,17 +119,58 @@ nav ul li {
   text-align: center;
 }
 
-.intro-page .intro .bite a {
+.bite a {
   text-decoration: none;
-}
-
-.intro-page .intro .bite h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #E5CDB0;
 }
 
-.intro-page .intro-img {
+.intro-img {
   margin: 8rem 4rem auto 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .bite a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .intro-img {
+    margin: 8rem 0 auto 5rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .intro-img img {
+    height: 60vh;
+    margin: 8rem 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1.5rem 0 0 0;
+    position: relative;
+  }
+  .bite {
+    display: none;
+  }
+  .intro h1 {
+    font-size: 5rem;
+  }
+  .intro-img img {
+    height: 50vh;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 50;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .cards {
@@ -186,6 +233,21 @@ nav ul li {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 800px) {
+  .cards {
+    margin-top: 10rem;
+  }
+  .card {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .card {
+    margin: 5rem;
+  }
+}
+
 .where {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,7 +264,7 @@ nav ul li {
   min-height: 100vh;
 }
 
-.where .map {
+.map img {
   margin: auto auto auto 8rem;
   border: 15px solid #310D09;
 }
@@ -250,6 +312,43 @@ nav ul li {
   color: #310D09;
 }
 
+@media screen and (max-width: 1600px) {
+  .where {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map img {
+    margin: auto;
+  }
+  .cards-where {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .map img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .map img {
+    height: 40vh;
+  }
+  .card-where {
+    padding: 0.8rem;
+  }
+  .card-where h3 {
+    font-size: 1.2rem;
+  }
+}
+
 .how {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,8 +368,6 @@ nav ul li {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .hommer {
@@ -284,5 +381,27 @@ nav ul li {
           align-items: center;
   text-align: center;
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .hommer h2 {
+    font-size: 1.5rem;
+  }
+  .hommer img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .how {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5rem;
+  }
+  .hommer img {
+    height: 50vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

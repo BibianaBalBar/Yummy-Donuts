@@ -1,11 +1,11 @@
 .where {
     @include flex(space-around, center, row);
-    min-height: 100vh;
+    min-height: 100vh;    
+}
 
-    .map {
-        margin: auto auto auto 8rem;
-        border: 15px solid #310D09;
-    }
+.map img {
+  margin: auto auto auto 8rem;
+  border: 15px solid #310D09;
 }
 
 .cards-where {
@@ -15,16 +15,16 @@
 
 .card-where {
     @include flex(space-around, center, row);
-	text-align: center;
-	flex: 1 1 25rem;
-	min-height: 20vh;
-	margin: 2rem 5rem;	
+	  text-align: center;
+	  flex: 1 1 25rem;
+	  min-height: 20vh;
+  	margin: 2rem 5rem;	
     background: #875034;
     border-radius: 25px;   
     padding: 1.3rem; 
 
 	h3 {
-		padding: 2rem;
+		    padding: 2rem;
         line-height: 1.8;
         font-family: 'Montserrat', sans-serif;
         font-weight: normal;
@@ -37,4 +37,38 @@
         }
 
     }
+}
+
+@media screen and (max-width: 1600px) {   
+  .where {
+    flex-direction: column;
+  }
+  
+  .map img {
+    margin: auto;
+  }   
+
+  .cards-where {
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1125px) {     
+  .map img {
+    height: 60vh;
+  }     
+}
+
+@media screen and (max-width: 800px) {    
+  .map img {
+    height: 40vh;
+  }  
+  
+  .card-where {
+    padding: 0.8rem;
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
 }

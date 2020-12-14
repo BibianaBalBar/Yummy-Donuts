@@ -30,7 +30,7 @@ function animateScenes() {
   //create scene
   pageScene = new ScrollMagic.Scene({
     triggerElement: cards,
-    triggerHook: 0.5,
+    triggerHook: 0.8,
     reverse: false
   })  
   .setTween(jumpCards)    
