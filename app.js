@@ -18,6 +18,7 @@ function animateScenes() {
   const slideItems = gsap.timeline({
     defaults: {duration:1, ease: 'power2.inOut'}
   });
+
   slideItems.fromTo(nav, {y: "-100%"} , {y: "0%"});
   slideItems.fromTo(introPage, {opacity: 0}, {opacity: 1});
 
@@ -43,7 +44,7 @@ function animateScenes() {
       
   //animation
   const homerImg = gsap.timeline({
-    defaults: {duration: 1, ease: 'power2.inOut'}
+    defaults: {duration: 0.6, ease: 'power2.inOut'}
   });
   homerImg.fromTo(img1, {opacity: 0}, {opacity: 1});
   homerImg.fromTo(img2, {opacity: 0}, {opacity: 1});

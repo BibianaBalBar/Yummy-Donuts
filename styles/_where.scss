@@ -67,8 +67,27 @@
   
   .card-where {
     padding: 0.8rem;
+    margin: 1rem 0 1rem 0;
     h3 {
       font-size: 1.2rem;
+    }    
+  }
+}
+
+@media screen and (max-width: 500px) {    
+  .map img {
+    height: 30vh;
+    margin-top: 3rem;
+  }  
+  
+  .card-where {
+    padding: 0.8rem;
+    margin: 1rem 0 1rem 0;
+    h3 {
+      font-size: 0.8rem;
+    }
+    img {
+      height: 6vh;
     }
   }
 }

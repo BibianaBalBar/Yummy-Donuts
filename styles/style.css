@@ -68,8 +68,37 @@ nav ul li {
 }
 
 @media screen and (max-width: 800px) {
+  nav ul {
+    width: 95%;
+    margin: auto;
+    font-size: 1.3rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5rem;
+  }
+  nav ul li {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
   nav {
-    font-size: 1.5rem;
+    padding: 0 2rem 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul {
+    width: 60%;
+    margin: 0;
+    font-size: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav ul li {
+    padding: 0.5rem;
   }
 }
 
@@ -103,7 +132,7 @@ nav ul li {
   margin: 10rem auto 0 auto;
 }
 
-.intro h4 {
+.intro h2 {
   font-family: Caveat Brush;
   font-weight: normal;
   color: #875034;
@@ -233,18 +262,30 @@ nav ul li {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 1400px) {
+  .card {
+    margin: 5rem;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .cards {
     margin-top: 10rem;
   }
   .card {
-    margin: 3rem;
+    margin: 5rem 0 1rem 0;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 400px) {
   .card {
-    margin: 5rem;
+    margin: 5rem 0 1rem 0;
+  }
+  .card h2 {
+    font-size: 2rem;
+  }
+  .card p {
+    font-size: 0.8rem;
   }
 }
 
@@ -343,9 +384,27 @@ nav ul li {
   }
   .card-where {
     padding: 0.8rem;
+    margin: 1rem 0 1rem 0;
   }
   .card-where h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .map img {
+    height: 30vh;
+    margin-top: 3rem;
+  }
+  .card-where {
+    padding: 0.8rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .card-where h3 {
+    font-size: 0.8rem;
+  }
+  .card-where img {
+    height: 6vh;
   }
 }
 
